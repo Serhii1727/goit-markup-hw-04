@@ -199,6 +199,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bc-before-feature);
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -210,6 +211,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bc-before-feature);
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -221,6 +223,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bc-before-feature);
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -232,6 +235,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bc-before-feature);
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -328,6 +332,37 @@ a {
   margin-top: 10px;
 }
 
+.section-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #afb1b8;
+}
+
+.link-item:hover {
+  background-color: var(--accent-text);
+  color: var(--primery-white-color);
+  border-radius: 50%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* Clients */
 
 .section-clients {
@@ -336,6 +371,14 @@ a {
 
 .section-clients-item {
   margin-top: 50px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.section-clients-item:hover,
+.section-clients-item:focus {
+  border: 1px solid #2196f3;
 }
 
 .section-clients-item:not(:last-child) {
@@ -345,16 +388,12 @@ a {
 .client-icon {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   fill: #afb1b8;
 }
 
 .client-icon:hover,
 .client-icon:focus {
   fill: #2196f3;
-  border: 1px solid #2196f3;
 }
 
 /* Footer */
@@ -399,6 +438,41 @@ a {
 address {
   font-style: normal;
 }
+
+.footer-box {
+  display: flex;
+}
+
+.address-box {
+  margin-right: 70px;
+  outline: 2px solid tomato;
+}
+/* Socials-box */
+.socials-box {
+  outline: 2px solid tomato;
+}
+
+.socials-box-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.socials-box-link {
+  display: flex;
+  margin-top: 20px;
+}
+
+.socials-box-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
 /* Button */
 
 button {
