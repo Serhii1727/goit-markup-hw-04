@@ -328,6 +328,35 @@ a {
   margin-top: 10px;
 }
 
+/* Clients */
+
+.section-clients {
+  display: flex;
+}
+
+.section-clients-item {
+  margin-top: 50px;
+}
+
+.section-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
 /* Footer */
 .footer {
   background-color: var(--secondary-bc-color);
