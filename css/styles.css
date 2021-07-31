@@ -131,6 +131,10 @@ a {
   margin-left: auto;
 }
 
+.auth-nav-item {
+  display: flex;
+}
+
 .auth-nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -145,6 +149,21 @@ a {
 .auth-nav-link:focus {
   color: var(--accent-text);
 }
+
+.auth-nav-link-svg {
+  color: var(--primery-text-color);
+  margin-right: 10px;
+}
+
+.auth-nav-link-svg:hover,
+.auth-nav-link-svg:focus {
+  color: var(--accent-text);
+}
+
+.auth-nav-icon {
+  fill: currentColor;
+}
+
 /* Hero */
 .hero {
   text-align: center;
@@ -445,13 +464,11 @@ address {
 
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 
 .address-box {
   margin-right: 70px;
-}
-
-.socials-box {
 }
 
 .socials-box-title {
