@@ -92,6 +92,12 @@ a {
   align-items: center;
 }
 
+.auth-nav-icon {
+  display: block;
+  width: 16px;
+  height: 12px;
+}
+
 /* Site nav */
 .site-nav {
   display: flex;
@@ -346,8 +352,7 @@ a {
   display: block;
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px;
   color: #afb1b8;
 }
 
@@ -357,9 +362,7 @@ a {
   border-radius: 50%;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
+.team-icon {
   fill: currentColor;
 }
 
@@ -369,31 +372,32 @@ a {
   display: flex;
 }
 
-.section-clients-item {
+.section-clients {
   margin-top: 50px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.section-clients-item:hover,
-.section-clients-item:focus {
-  border: 1px solid #2196f3;
 }
 
 .section-clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-icon {
+.client-link {
+  display: block;
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  padding: 16px 32px;
 }
 
-.client-icon:hover,
-.client-icon:focus {
-  fill: #2196f3;
+.client-link:hover {
+  color: var(--accent-text);
+  border: 1px solid var(--accent-text);
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -445,32 +449,34 @@ address {
 
 .address-box {
   margin-right: 70px;
-  outline: 2px solid tomato;
 }
-/* Socials-box */
+
 .socials-box {
-  outline: 2px solid tomato;
 }
 
 .socials-box-title {
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.socials-box-link {
+.socials-box-item {
   display: flex;
   margin-top: 20px;
 }
 
-.socials-box-item:not(:last-child) {
+.socials-box-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.box-icon {
-  width: 20px;
-  height: 20px;
-  fill: white;
+.socials-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-item {
+  fill: var(--primery-white-color);
 }
 
 /* Button */
@@ -520,6 +526,8 @@ button {
 .filter-button:focus {
   background-color: var(--accent-text);
   color: var(--primery-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-work {
@@ -538,6 +546,12 @@ button {
 
 .portfolio-work-link {
   display: block;
+}
+
+.portfolio-work-link:hover,
+.portfolio-work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-work-title {
