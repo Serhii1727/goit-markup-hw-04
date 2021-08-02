@@ -140,6 +140,8 @@ a {
 }
 
 .auth-nav-link {
+  display: flex;
+  align-items: center;
   color: var(--primery-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -150,14 +152,8 @@ a {
   color: var(--accent-text);
 }
 
-.auth-nav-link-svg {
-  color: var(--primery-text-color);
+.auth-nav-svg {
   margin-right: 10px;
-}
-
-.auth-nav-link-svg:hover,
-.auth-nav-link-svg:focus {
-  color: var(--accent-text);
 }
 
 .auth-nav-icon {
@@ -183,7 +179,7 @@ a {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/ImgHero.jpg);
+    url(../images/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -212,56 +208,19 @@ a {
   display: flex;
 }
 
+.feature-svg {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+}
+
 .feature-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.feature-item:nth-child(1)::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-image: url(../images/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bc-before-feature);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.feature-item:nth-child(2)::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-image: url(../images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bc-before-feature);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.feature-item:nth-child(3)::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-image: url(../images/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bc-before-feature);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.feature-item:nth-child(4)::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bc-before-feature);
-  border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .feature-title {
@@ -375,7 +334,8 @@ a {
   color: #afb1b8;
 }
 
-.link-item:hover {
+.link-item:hover,
+.link-item:focus {
   background-color: var(--accent-text);
   color: var(--primery-white-color);
   border-radius: 50%;
@@ -410,7 +370,8 @@ a {
   padding: 16px 32px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-text);
   border: 1px solid var(--accent-text);
 }
